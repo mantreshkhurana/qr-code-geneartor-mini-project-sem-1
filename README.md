@@ -1,6 +1,6 @@
 # QR Code Generator
 
-This is a QR-generator service you can host on your own machine.
+This is a simple QR code generator built using Flask. This project is for my PPS(Programming for Problem Solving).
 
 ## Table of Contents
 
@@ -28,8 +28,8 @@ Expected parameters:
 ## Installation
 
 ```bash
-git clone https://github.com/mantreshkhurana/qr-code-geneartor-flask.git
-cd qr-code-geneartor-flask
+git clone https://github.com/mantreshkhurana/qr-code-geneartor-mini-project-sem-1.git
+cd qr-code-geneartor-mini-project-sem-1
 pip install -r requirements.txt
 python app.py
 ```
