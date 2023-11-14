@@ -33,7 +33,7 @@ Expected parameters:
 git clone https://github.com/mantreshkhurana/qr-code-geneartor-mini-project-sem-1.git
 cd qr-code-geneartor-mini-project-sem-1
 pip install -r requirements.txt
-python app.py
+python app.py -w
 ```
 
 ## Authors
