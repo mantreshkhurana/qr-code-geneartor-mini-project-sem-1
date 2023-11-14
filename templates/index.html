@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ title }}" />
+    <meta name="author" content="Mantresh Kumar & Arpit Mohan Saxena" />
+
+    <link rel="stylesheet" href="/static/water.css" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="/static/main.js"></script>
+  </head>
+
+  <body>
+    <h1>{{ title }}</h1>
+    <div class="main">
+      <div>
+        <form onsubmit="createQRCode(event)">
+          <label for="url">URL</label>
+          <input
+            type="url"
+            name="url"
+            id="url"
+            placeholder="https://www.example.com"
+          />
+          <label for="boxsize">Size</label>
+          <input
+            type="range"
+            id="boxsize"
+            name="boxsize"
+            min="1"
+            max="100"
+            value="10"
+            step="1"
+            onchange="createQRCode()"
+          />
+          <div class="colors">
+            <div>
+              <label for="clrfill">Fill</label>
+              <input
+                type="color"
+                name="clrfill"
+                id="clrfill"
+                onchange="createQRCode()"
+                value="#000000"
+                colorpick-eyedropper-active="true"
+              />
+            </div>
+            <div>
+              <label for="clrback">Background</label>
+              <input
+                type="color"
+                name="clrback"
+                id="clrback"
+                onchange="createQRCode()"
+                value="#FFFFFF"
+                colorpick-eyedropper-active="true"
+              />
+            </div>
+          </div>
+          <!-- <input type="submit" value="Create" /> -->
+        </form>
+
+        <div class="qr-code-container">
+          <img id="qrcode" />
+        </div>
+
+        <center>
+          <a id="btn-download" role="button" download>
+            <button>Download</button>
+          </a>
+        </center>
+        <!-- <button id="btn-cpy">Copy URL</button> -->
+      </div>
+    </div>
+
+    <footer>
+      <p>Created by Mantresh Kumar & Arpit Mohan Saxena</p>
+    </footer>
+  </body>
+</html>

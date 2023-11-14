@@ -1,0 +1,4 @@
+*.pyc
+venv/
+qr_codes/
+.DS_Store
