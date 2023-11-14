@@ -1,3 +1,5 @@
+<img src="https://1.bp.blogspot.com/-N-XwxleEyOo/WYQEtqUZGnI/AAAAAAAAwRI/Klh5vIblR_EzyXjHsm1zh5WP3hWZMaciACLcBGAs/s1600/SRM%2BLogo.png" height=70>
+
 # QR Code Generator
 
 This is a simple QR code generator built using Flask. This project is for my PPS(Programming for Problem Solving).
